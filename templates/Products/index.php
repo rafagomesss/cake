@@ -24,7 +24,7 @@
                     <td><?= $this->Number->format($product->id) ?></td>
                     <td><?= h($product->name) ?></td>
                     <td><?= $product->price === null ? '' : $this->Number->format($product->price) ?></td>
-                    <td><?= $product->category_id === null ? '' : $this->Number->format($product->category_id) ?></td>
+                    <td><?= $product->category_id === null ? '' : $product->category->category ?></td>
                     <td class="actions">
                         <?= $this->Html->link(__('View'), ['action' => 'view', $product->id]) ?>
                         <?= $this->Html->link(__('Edit'), ['action' => 'edit', $product->id]) ?>

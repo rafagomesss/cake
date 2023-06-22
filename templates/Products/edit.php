@@ -26,7 +26,7 @@
                     echo $this->Form->control('name');
                     echo $this->Form->control('description');
                     echo $this->Form->control('price');
-                    echo $this->Form->control('categoria_id', ['options' => $categorias]);
+                    echo $this->Form->control('categoria_id', ['options' => $categories]);
                 ?>
             </fieldset>
             <?= $this->Form->button(__('Submit')) ?>
